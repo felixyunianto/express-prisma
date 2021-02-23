@@ -9,7 +9,9 @@
 ![Schema Database](https://res.cloudinary.com/plugin007/image/upload/v1614033636/Screenshot_from_2021-02-23_05-36-30_p5gvu0.png)
 
 ### API Documentation
-API Documentation is coming soon :satisfied: :satisfied:
+You can view the API documentation at the link [API Documentation](https://documenter.getpostman.com/view/8869465/TWDZHFus)
+
+
 
 ----------
 

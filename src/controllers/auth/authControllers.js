@@ -10,14 +10,10 @@ const checkEmail = (dataCheck) => {
       where: {
         OR: [
           {
-            email: {
-              contains: dataCheck[0],
-            },
+            email: dataCheck[0]
           },
           {
-            username: {
-              contains: dataCheck[1],
-            },
+            username: dataCheck[1]
           },
         ],
       },
@@ -75,7 +71,7 @@ module.exports = {
         } else {
           const isValid = bcrypt.compareSync(body.password, data.password);
           if (!isValid) {
-            form.formError(res, "Password is word", 401);
+            form.formError(res, "Password is wrong", 401);
           } else {
             const payload = {
               id: data.id,

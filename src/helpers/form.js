@@ -1,6 +1,6 @@
 module.exports = {
     formSuccess: (res, data, status) => {
-        res.send({
+        res.status(status).send({
             msg : 'Success',
             status: status,
             data: data
@@ -8,7 +8,7 @@ module.exports = {
     },
 
     formError: (res, error, status) => {
-        res.send({
+        res.status(status).send({
             msg : "Error",
             status: status,
             error: error

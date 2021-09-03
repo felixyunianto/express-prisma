@@ -7,7 +7,11 @@ module.exports = {
   getProducts: (req, res) => {
     const { body } = req;
     prisma.products
-      .findMany()
+      .findMany({
+        category : {
+          categoryName: true
+        }
+      })
       .then((data) => {
         form.formSuccess(res, data, 200);
       })
